@@ -1,16 +1,86 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Space Mono', monospace;
+  }
+
+aside {
+    flex: 1;
+  }
+  
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
 body {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  background-color: black;
-  margin: 0rem;
-  overflow: hidden;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .splash {    
+    background-image: url('space.svg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: darkblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+ }
+ 
+ .splash h1 {
+    color: white;
+    font-size: 8em;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    margin-bottom: 14%;
+    z-index: 1;
+ }
+ #splash-image {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
 
-h1 {
-  font-family: 'Space Mono', monospace;
-  font-size: clamp(3rem, 10vw, 10rem);
-  color: white;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
-}
+ .navbar {
+    background-color: #333;
+    overflow: hidden;
+ }
+ 
+ .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+ }
+ 
+ .navbar li {
+    float: left;
+ }
+ 
+ .navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+ }
+ 
+ @media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+    section {
+        margin-left: 0;
+    }
+  }
+  
