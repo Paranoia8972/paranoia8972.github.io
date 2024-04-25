@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+  color: #00FF00;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 20px;
+}
+
+#terminal {
+  border: 1px solid #00FF00;
+  padding: 10px;
+}
+
+#output {
+  margin-bottom: 10px;
+}
+
+#input-line {
+  display: flex;
+}
+
+.prompt {
+  color: #00FF00;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #00FF00;
+  font-family: monospace;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+input::selection {
+  background-color: #00FF00;
+}
+
+input::-moz-selection {
+  background-color: #00FF00;
+}
+
+.cyan {
+  color: cyan;
+}
+
+.white {
+  color: white;
+}
